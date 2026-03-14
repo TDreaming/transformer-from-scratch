@@ -1,0 +1,63 @@
+site_name: 从零实现 Transformer
+site_url: https://songyaolun.github.io/transformer-from-scratch/
+site_description: 从零开始用 PyTorch 手写一个完整的 Transformer 模型
+site_author: songyaolun
+
+repo_name: songyaolun/transformer-from-scratch
+repo_url: https://github.com/songyaolun/transformer-from-scratch
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex:
+      generic: true
+  - tables
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 系列文章:
+    - 一、PyTorch 基础与神经网络模块: 01-pytorch-basics.md
+    - 二、数据处理与 Transformer 输入层: 02-data-and-input-layer.md
+    - 三、多头注意力机制与核心组件: 03-multi-head-attention.md
+    - 四、Transformer 模型组装: 04-transformer-assembly.md
+    - 五、训练、推理与可视化: 05-training-and-inference.md
